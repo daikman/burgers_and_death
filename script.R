@@ -30,7 +30,7 @@ ggplot(data = distinct(cardio_death, Entity, .keep_all = TRUE),
   geom_text_repel() +
   dark_theme_gray() +
   scale_x_continuous(breaks = 1:7, labels = 1:7, limits = c(1, 7)) +
-  labs(y ="Death from Cardiovacsular Disease Per 100,000 People",
+  labs(y ="Deaths from Cardiovacsular Disease Per 100,000 People",
        x = "Price of a Big Mac in US Dollars",
        title = "The Price of a Big Mac vs. Death Rate from Cardiovascular Disease",
        subtitle = "Averaged across 2000-2017",
@@ -50,7 +50,7 @@ ggplot(data = cardio_death, aes(x = dollar_price, y = death_rate)) +
   facet_wrap(vars(Year), ncol = 3) +
   dark_theme_gray() +
   scale_x_continuous(breaks = 1:7, labels = 1:7, limits = c(1, 7)) +
-  labs(y = "Death from Cardiovascular Disease Per 100,000 People",
+  labs(y = "Deaths from Cardiovascular Disease Per 100,000 People",
        x = "Price of a Big Mac in US Dollars",
        title = "The Price of a Big Mac vs. Death Rate from Cardiovascular Disease",
        subtitle = "For each of the years 2000-2017",
